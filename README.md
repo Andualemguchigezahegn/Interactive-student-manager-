@@ -115,6 +115,7 @@
             
             // Andualem Guchi
             { id: 18, name: 'Andualem Guchi', department: 'Computer Science', year: 1 }
+             { id: 19, name: 'Hasen Injamo', department: 'Computer Science', year: 1 }
         ];
 
         // ============================================================
