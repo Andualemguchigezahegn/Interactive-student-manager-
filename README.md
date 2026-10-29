@@ -147,6 +147,15 @@
                 });
                 return grades;
             }
+            // Hasen Injamo (id: 19) - mostly A and A+, only 2 A-
+            if (studentId === 19) {
+                const hasenGrades = ['A', 'A+', 'A', 'A+', 'A', 'A-', 'A-'];
+                COURSES.forEach((course, index) => {
+                    grades[course] = hasenGrades[index];
+             });
+                return grades;
+            }
+            
             
             // For other students - random grades
             COURSES.forEach(course => {
