@@ -115,6 +115,7 @@
             
             // Andualem Guchi
             { id: 18, name: 'Andualem Guchi', department: 'Computer Science', year: 1 }
+            { id: 19, name: 'Hasen Injamo', department: 'Computer Science', year: 1 }
         ];
 
         // ============================================================
@@ -139,14 +140,22 @@
         const generateStudentGrades = (studentId) => {
             const grades = {};
             
-            // Andualem Guchi (id: 18) - mostly A and A+, only 2 A-
+               // Andualem Guchi (id: 18) - mostly A and A+, only 2 A-
             if (studentId === 18) {
                 const andualemGrades = ['A', 'A+', 'A', 'A+', 'A', 'A-', 'A-'];
                 COURSES.forEach((course, index) => {
                     grades[course] = andualemGrades[index];
-                });
+             });
                 return grades;
             }
+       // Hasen Injamo (id: 19) - mostly A and A+, only 2 A-
+            if (studentId === 19) {
+                const hasenGrades = ['A', 'A+', 'A', 'A+', 'A', 'A-', 'A-'];
+                COURSES.forEach((course, index) => {
+                    grades[course] = hasenGrades[index];
+             });
+                return grades;
+            }    
             
             // For other students - random grades
             COURSES.forEach(course => {
